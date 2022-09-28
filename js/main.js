@@ -73,7 +73,7 @@ function lockScroll(){
 
 function unlockScrollForAppartments(){
   lockScroll();
-  window.location.href = "#apartments";
+  window.location.href = "index.html#apartments";
   lockScroll();
 }
 
@@ -90,12 +90,16 @@ $('a[href^="#"]').bind('click.smoothscroll',function (e) {
 
 
 function noDigits(event) {
-  if ("1234567890-/.,?<>|!#@^:;()".indexOf(event.key) != -1)
+  if ("1234567890-_/.,?<>|!#@^:;()".indexOf(event.key) != -1)
     event.preventDefault();
 };
 
 function noABC(event) {
-  if ("qwertyuiopasdfghjklzxcvbnmйцукенгшщзхъфывапролджэячсмитьбюё-/.,?<>|!#@^:;()".indexOf(event.key) != -1)
+  if ("qwertyuiopasdfghjklzxcvbnmйцукенгшщзхъфывапролджэячсмитьбюё-_/.,?<>|!#@^:;()".indexOf(event.key) != -1)
+    event.preventDefault();
+};
+function noRUSABC(event) {
+  if ("йцукенгшщзхъфывапролджэячсмитьбюё/,?<>|!#^:;()".indexOf(event.key) != -1)
     event.preventDefault();
 };
 

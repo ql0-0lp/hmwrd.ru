@@ -9,15 +9,58 @@
 }
 
 body::-webkit-scrollbar {
-  width: 10px;               /* ширина scrollbar */
+  width: 10px;              
 }
 body::-webkit-scrollbar-track {
-  background: #564289;        /* цвет дорожки */
+  background: #564289;        
 }
 body::-webkit-scrollbar-thumb {
-  background-color:var(--bs-red);    /* цвет плашки */
-  border-radius: 20px;       /* закругления плашки */
-  border: 3px solid #564289;  /* padding вокруг плашки */
+  background-color:var(--bs-red);    
+  border-radius: 20px;       
+  border: 3px solid #564289;  
+}
+
+@media (min-width: 1500px){
+  body{zoom: 110%}
+}
+@media (min-width: 1600px){
+  body{zoom: 115%}
+}
+@media (min-width: 1700px){
+  body{zoom: 122%}
+}
+@media (min-width: 1800px){
+  body{zoom: 130%}
+}
+@media (min-width: 1900px){
+  body{zoom: 137%}
+}
+@media (min-width: 2000px){
+  body{zoom: 144%}
+}
+@media (min-width: 2100px){
+  body{zoom: 152%}
+}
+@media (min-width: 2200px){
+  body{zoom: 157%}
+}
+@media (min-width: 2300px){
+  body{zoom: 165%}
+}
+@media (min-width: 2400px){
+  body{zoom: 172%}
+}
+@media (min-width: 2500px){
+  body{zoom: 178%}
+}
+@media (min-width: 2600px){
+  body{zoom: 186%}
+}
+@media (min-width: 2700px){
+  body{zoom: 192%}
+}
+@media (min-width: 2800px){
+  body{zoom: 200%}
 }
 
 section{
@@ -245,18 +288,20 @@ nav h2{
   left: 5%;
   color: #FFF;
 }
+.jc-spbe{
+  display: flex;
+  justify-content: space-between;
+}
 .nav-pc-menu {
   display: flex;
-  justify-content: right;
   position: relative;
   text-align: center;
 }
 .nav-mb-menu{
   display: none;
-  float: right;
   margin-top: 25px;
 }
-@media (max-width: 1026px){
+@media (max-width: 1100px){
   .nav-pc-menu{display: none;}
   .nav-mb-menu{display: block;}
 }
@@ -266,10 +311,11 @@ nav h2{
   font-weight: 200;
   font-size: 15px;
   text-transform: uppercase;
-  margin: 40px 3% 0 0;
+  margin-top: 40px;
+  margin-right: 40px;
 }
-@media (max-width: 1110px){
-  .nav-pc-menu li{font-size: 13px;}
+@media (max-width: 1200px){
+  .nav-pc-menu li{font-size: 13px; margin-top: 42px;}
 }
 .header-text {
   position: absolute;
@@ -500,16 +546,16 @@ nav h2{
   .apartment-container{box-shadow: none;}
 }
 .apartment-description div{
- padding: 240px 0 0 20px;
+ padding: 255px 0 0 20px;
 }
 @media (max-width: 1200px){
-  .apartment-description div{padding-top: 170px;}
+  .apartment-description div{padding-top: 185px;}
 }
 @media (max-width: 992px){
-  .apartment-description div{padding-top: 275px;}
+  .apartment-description div{padding-top: 285px;}
 }
 @media (max-width: 767.9px){
-  .apartment-description div{padding-top: 130px;}
+  .apartment-description div{padding-top: 150px;}
 }
 .apartment-description h3{
   color: #FFF;
@@ -1094,21 +1140,22 @@ nav h2{
   .flat-desc-img{display: block;}
 }
 .reserved-btn a{
-  position: fixed; 
+  position: fixed;
   z-index: 16; 
-  right: 3%; 
-  bottom: 20px; 
-  background-color: #FFF; 
-  border: 3px solid var(--bs-red);
+  right: 2%; 
+  bottom: 2%; 
+  background-color: var(--bs-red); 
   border-radius: 20px;
-  color: var(--bs-violet);
+  border: 3px solid var(--bs-red);
+  color: #FFF;
+  font-size: 1.2em;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 7px 17px;
   transition: 0.3s;
 }
 .reserved-btn a:hover{
-  background-color: var(--bs-red);
-  color: #FFF;
+  background-color: #FFF;
+  color: var(--bs-red);
 }
 .right-text h3:before{
   margin-left: 131px;
@@ -1288,20 +1335,8 @@ footer{
 .footer-logo p{
   font-size: 14px;
 }
-.cr-logo{
-  margin: 10px 0 0 0px;
-  position: absolute;
-}
-.cr-logo a{
-  display: flex;
-}
-.cr-logo font{
-  color: red;
-  font-family: Knewave;
-  margin-left: 6px;
-}
 @media (min-height: 650px) and (min-width: 767.9px){
-  .cr-logo a{margin-left: 40px !important;}
+  .cr-logo p{margin-left: 34px !important;}
 }
 @media (max-width: 992px){
   footer{padding: 20px 0;}

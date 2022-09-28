@@ -9,6 +9,9 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 		<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
@@ -41,13 +44,15 @@
 				<div class="container">
 					<div class="row">
 						<nav>
-							<a class="logo" href="index.html"><img src="img/icons/logo.svg"></a>
-							<ul class="nav-pc-menu">
-								<li><a href="deal.html">Сопровождение сделок</a></li>
-								<li><a href="mortgage.html">Одобрение ипотеки</a></li>
-								<li><a href="index.html#apartments">Посуточное жилье</a></li>
-								<li><a href="https://adanpa.ru" target="_blank">Юридические услуги</a></li>
-							</ul>
+							<div class="jc-spbe">
+								<a class="logo" href="index.html"><img src="img/icons/logo.svg"></a>
+								<ul class="nav-pc-menu">
+									<li><a href="deal.html">Сопровождение сделок</a></li>
+									<li><a href="mortgage.html">Одобрение ипотеки</a></li>
+									<li><a href="index.html#apartments">Посуточное жилье</a></li>
+									<li><a href="https://adanpa.ru" target="_blank">Юридические услуги</a></li>
+								</ul>
+							</div>
 							<div class="nav-mb-menu">
 								<div id="mobile-overlay" class="mobile-overlay"></div>
 								<input type="checkbox" id="hmt" onclick="lockScroll();" class="mobile-menu-ticker">
@@ -57,10 +62,10 @@
 								    <span class="third"></span>
 								</label>
 								<ul class="mobile-menu"> 
-									<li class="mobile-first"><a href="index.html#apartments">Посуточное жилье</a></li> 
-								    <li><a  href="mortgage.html">Одобрение ипотеки</a></li>
+									<li class="mobile-first"><a href="index.html#apartments" onclick="unlockScrollForAppartments()">Посуточное жилье</a></li> 
+								    <li><a href="mortgage.html">Одобрение ипотеки</a></li>
 								    <li><a href="https://adanpa.ru" target="_blank">Юридические услуги</a></li> 
-								    <li><a for="hmt" href="deal.html">Сопровождение сделок</a></li>
+								    <li><a href="deal.html">Сопровождение сделок</a></li>
 								    <li class="mobile-social">
 								    	<a href="tel:+79852814306">+7 (985) 281-43-06</a>
 										<a href="mailto:dgama123@mail.ru">dgama123@mail.ru</a>
@@ -163,7 +168,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="cr-logo">
-							<a href="https://4e1.ru">Сделано в <font>4E1</font></a>
+							<p style="color: #FFF !important; font-family: Inter, sans-serif !important; font-size: 12px;">Разработка - <a href="https://sdouble.ru" target="_blank" style="color: #FFF !important; font-weight: 600; font-family: Inter; font-size: 16px;"><span style="color: #E54556 !important">S</span>Double</a></p>
 						</div>
 					</div>
 					<div class="col-md-6">
